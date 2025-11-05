@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --accent-color: #8672ff;
+  --base-color: white;
+  --text-color: #2e2b41;
+  --input-color: #f3f0ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Poppins, Segoe UI, sans-serif;
+  font-size: 12pt;
+  color: #2e2b41;
+}
+
+.backgroundLogin {
+  min-height: 100vh;
+  background-image: url(images/pexels-jplenio-1103970.jpg);
+  background-size: cover;
+  background-position: right;
+  overflow: hidden;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  background-color: white;
+  height: 100vh;
+  width: max(40%, 600px);
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sign-in-form {
+  width: min(400px, 100%);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sign-in-form > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-form label {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #8672ff;
+  fill: white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sign-in-form input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1em;
+  font: inherit;
+  border-radius: 0 10px 10px 0;
+  border: 2px #f3f0ff solid;
+  border-left: none;
+  background-color: #f3f0ff;
+  transition: 150ms ease;
+}
+
+.sign-in-form input:hover {
+  border-color: #8672ff;
+}
+
+.sign-in-form input:focus {
+  outline: none;
+  border-color: #2e2b41;
+}
+
+div:has(input:focus) > label {
+  background-color: #2e2b41;
+}
+
+.sign-in-button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 0.85em 4em;
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #8672ff;
+  transition: 150ms ease;
+}
+
+form button:hover {
+  background-color: #2e2b41;
+}
+
+form button:focus {
+  outline: none;
+  background-color: #2e2b41;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2b41;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: min(600px, 100%);
+    border-radius: 0;
+  }
+}
+
+form div.incorrect label {
+  background-color: #f06272;
+}
+
+form div.incorrect input {
+  border-color: #f06272;
+}
+
+/* Contact style */
+
+.contact-background {
+  background-color: rgb(160, 205, 87);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content {
+  width: 70%;
+  height: 80%;
+  background-color: rgb(133, 171, 70);
+}
+.contact-header {
+  margin: 5vh;
+  font-size: 40px;
+  border-bottom: 4px solid rgb(105, 105, 105);
+  width: 40%;
+}
+
+.contact-form {
+  margin: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-block input {
+  width: 40%;
+}
+
+.contact-input {
+  height: 50px;
+}
+
+.input-message {
+  height: 200px;
+}
+
+.contact-button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 0.85em 4em;
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+  background-color: #8672ff;
+  transition: 150ms ease;
+  width: 40%;
+}
+
+/* Bootstrap style */
+
+nav {
+  height: 10vh;
+  font-size: 2vh;
+}
+
+.navbar-brand {
+  font-size: 3vh;
+  margin-left: 1vw;
+}
+
+/* CV style */
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+
+.cv-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid black;
+}
+
+.utdanning {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.utdanning-content {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 50px;
+  text-align: center;
+}
+
+.arbeidserfaring {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.arbeidserfaring > h2 {
+  text-align: center;
+}
+
+.arbeidserfaring-content {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.4fr;
+  gap: 50px;
+}
+
+.jobb {
+  margin: 0px 20px 0 20px;
+}
+
+.ferdigheter {
+  margin-top: 50px;
+}
+
+.cv-info {
+  flex: 1;
+}
+
+.cv-info h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.cv-info h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cv-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+/* Style intro */
+.intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0e0e0e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  z-index: 9999;
+  opacity: 1;
+  animation: fadeOut 1s ease forwards;
+  animation-delay: 1s;
+}
+
+.intro-text {
+  opacity: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease forwards;
+  text-align: center;
+}
+
+.intro-text span {
+  color: yellow;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}

@@ -1,0 +1,65 @@
+.cv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  margin: auto;
+  border-bottom: 3px solid black;
+  padding-bottom: 20px;
+  font-size: larger;
+}
+
+.cv-info {
+  flex: 1;
+}
+
+.cv-info h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.cv-info h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.cv-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 600px;
+}
+
+.utdanning p {
+  font-size: 20px;
+}
+
+.utdanning h3 {
+  font-size: 20px;
+}
+
+.utdanning > .beskrivelse {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.utdanning {
+  margin-bottom: 50px;
+}
+
+.utdanning {
+  border-bottom: 3px solid black;
+  max-width: 25%;
+}
+
+.arbeidserfaring {
+  border-bottom: 3px solid black;
+  max-width: 25%;
+}
