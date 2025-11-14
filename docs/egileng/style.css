@@ -1,0 +1,143 @@
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+#image-track > .image {
+  width: 37vmin;
+  height: 53vmin;
+  object-fit: cover;
+  object-position: 50% center;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+}
+
+.logo {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: 5vw;
+  z-index: 5;
+  user-select: none;
+}
+
+.container {
+  right: 1vw;
+  position: absolute;
+  transform: skew(-20deg);
+  top: 0px;
+  height: 10vh;
+  background-color: rgb(187, 34, 34);
+}
+
+.banner {
+  width: 100%;
+  height: 12vh;
+  position: absolute;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.button {
+  background-color: black;
+  color: white;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-size: 2.5vh;
+  width: 11vw;
+  height: 10vh;
+  border: none;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+.image {
+  background-color: white;
+}
+
+.webshop {
+  position: absolute;
+  top: 79%;
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3vh;
+  right: 7%;
+  text-decoration: none;
+  transform: skew(-20deg);
+}
+
+.webshop::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.webshop:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.info {
+  background-color: rgb(32, 31, 31);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+}
+
+.tabell {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-collapse: separate;
+  border-spacing: 80px 5px;
+}
+
+.row1 {
+  font-size: 2.5vh;
+  display: inline-block;
+  border-bottom: 3px solid red;
+  padding-bottom: 0;
+}
+
+.row2 {
+  display: flex;
+  justify-content: left;
+}
+
+.row3 {
+  display: flex;
+  justify-content: left;
+}
+
+.row4 {
+  display: flex;
+  justify-content: left;
+}
+
+.row5 {
+  display: flex;
+  justify-content: left;
+}
