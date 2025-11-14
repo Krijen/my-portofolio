@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(46, 46, 46);
+
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 8vh;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-decoration: underline;
+  transform: translateY(70px);
+}
+
+.banner {
+  margin: 0;
+  left: 0;
+  height: 13vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  width: 5vw;
+  z-index: 5;
+  user-select: none;
+}
+
+.item {
+  height: 3vh;
+  width: 25vw;
+  font-size: 3vh;
+  margin: 3px;
+}
+
+.input-box {
+  margin-top: 10px;
+}
+
+.innhold {
+  font-size: 3vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transform: translateY(50px);
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(50px);
+}
