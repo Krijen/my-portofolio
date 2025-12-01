@@ -1,9 +1,8 @@
 body {
   background-color: rgb(216, 3, 81);
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +10,10 @@ body {
 
 .content {
   display: flex;
+  flex-wrap: wrap;
   height: 80%;
-  width: 90%;
+  min-height: 400px;
+  max-width: 95%;
   box-shadow: 0 20px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -24,15 +25,16 @@ body {
 .image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .payment {
-  flex: 1.2;
+  flex: 1 1 420px;
+  padding: 20px;
   background-color: white;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 }
 
 .frame {
@@ -50,8 +52,11 @@ body {
 
 .rating {
   font-weight: bold;
-  font-size: 30px;
   display: flex;
+}
+
+.rating p {
+  font-size: 40px;
 }
 
 .rating p span {
@@ -93,16 +98,22 @@ body {
 
 #cardInfo {
   display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 #cardInfo input {
   border-style: none;
   border-bottom: 2px solid rgb(216, 216, 216);
+  flex: 1 1 120px;
+  min-width: 100px;
 }
 
 #Checkout button {
-  margin-top: 40px;
-  border-radius: 0;
+  width: 100%;
+  max-width: 300px;
+  margin: 40px auto 0 auto;
+  border-radius: 6px;
   background-color: darkblue;
   text-transform: uppercase;
 }
@@ -111,4 +122,144 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Media queries */
+@media (min-width: 1435px) and (max-width: 1665px) {
+  .image {
+    flex: 1 1 40%;
+    min-height: 350px;
+  }
+
+  .payment {
+    flex: 1 1 60%;
+    padding: 10px 15px;
+  }
+
+  .frame {
+    width: 95%;
+    height: auto;
+  }
+
+  .description h1 {
+    font-size: 35px;
+  }
+
+  .description p,
+  .rating p {
+    font-size: 23px;
+  }
+
+  .rating p span {
+    font-size: 25px;
+  }
+
+  .rating img {
+    height: 35px;
+  }
+
+  .rating-top {
+    height: 35px;
+  }
+
+  #order footer {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  #Checkout button {
+    margin-top: 20px !important;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+/* 1200 1400 */
+@media (min-width: 800px) and (max-width: 1435px) {
+  .image {
+    flex: 1 1 40%;
+    min-height: 350px;
+  }
+
+  .payment {
+    flex: 1 1 60%;
+    padding: 10px 15px;
+  }
+
+  .frame {
+    width: 95%;
+    height: auto;
+  }
+
+  .description h1 {
+    font-size: 30px;
+  }
+
+  .description p,
+  .rating p {
+    font-size: 20px;
+  }
+
+  .rating p span {
+    font-size: 20px;
+  }
+
+  .rating img {
+    height: 30px;
+  }
+
+  .rating-top {
+    height: 35px;
+  }
+
+  #order footer {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  #Checkout button {
+    margin-top: 20px !important;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .image {
+    flex: 1 1 100%;
+    min-height: 350px;
+  }
+
+  .payment {
+    flex: 1 1 60%;
+    padding: 10px 15px;
+  }
+
+  .frame {
+    width: 95%;
+    height: auto;
+  }
+
+  .description h1 {
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
+  }
+
+  .description p,
+  .rating p {
+    font-size: clamp(0.65rem, 2vw, 0.9rem);
+  }
+
+  .rating img {
+    height: 35px;
+  }
+
+  #order footer {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+  }
+
+  #Checkout button {
+    margin-top: 20px !important;
+    width: 100%;
+    font-size: 0.8rem;
+  }
 }
